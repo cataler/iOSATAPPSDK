@@ -8,7 +8,6 @@
 #ifndef ATNetworking_h
 #define ATNetworking_h
 
-
 typedef void (^HYBDownloadProgress)(int64_t bytesRead,
                                     int64_t totalBytesRead);
 typedef HYBDownloadProgress HYBGetProgress;
