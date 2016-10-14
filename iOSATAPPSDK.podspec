@@ -2,7 +2,9 @@
 #  Be sure to run `pod spec lint iOSATAPPSDK.podspec' to ensure this is a
 #  valid spec and to remove all comments including this before submitting the spec.
 #
-#  To learn more about Podspec attributes see 
+#  To learn more about Podspec attributes see http://docs.cocoapods.org/specification.html
+#  To see working Podspecs in the CocoaPods repo see https://github.com/CocoaPods/Specs/
+#
 
 Pod::Spec.new do |s|
 
@@ -14,8 +16,8 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "iOSATAPPSDK"
-  s.version      = “0.0.1”
-  s.summary      = "整合开发一款APP常用的第三方框架"
+  s.version      = "0.0.2"
+  s.summary      = "一款开发常用APP综合第三方框架(整合开发常用的第三方框架)"
 
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
@@ -23,7 +25,6 @@ Pod::Spec.new do |s|
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   s.description  = <<-DESC
-                        此项目根据多年的项目经验整合开发一款普通APP常用的第三方框架
                    DESC
 
   s.homepage     = "https://github.com/cataler/iOSATAPPSDK"
@@ -37,7 +38,7 @@ Pod::Spec.new do |s|
   #  Popular ones are 'MIT', 'BSD' and 'Apache License, Version 2.0'.
   #
 
-  s.license      = "MIT"
+  s.license      = "MIT (example)"
   # s.license      = { :type => "MIT", :file => "FILE_LICENSE" }
 
 
@@ -51,10 +52,10 @@ Pod::Spec.new do |s|
   #  profile URL.
   #
 
-  s.author             = { "catal" => "cataler@163.com" }
-  # Or just: s.author    = "catal"
-  # s.authors            = { "catal" => "cataler@163.com" }
-  # s.social_media_url   = "http://twitter.com/catal"
+  s.author             = { "蔡安涛" => "email@address.com" }
+  # Or just: s.author    = "蔡安涛"
+  # s.authors            = { "蔡安涛" => "email@address.com" }
+  # s.social_media_url   = "http://twitter.com/蔡安涛"
 
   # ――― Platform Specifics ――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
@@ -63,7 +64,7 @@ Pod::Spec.new do |s|
   #
 
   # s.platform     = :ios
-  s.platform     = :ios, "7.0"
+  # s.platform     = :ios, "5.0"
 
   #  When using multiple platforms
   # s.ios.deployment_target = "5.0"
@@ -78,7 +79,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/cataler/iOSATAPPSDK.git", :tag => "0.0.1" }
+  s.source       = { :git => "https://github.com/cataler/iOSATAPPSDK.git", :tag => "0.0.2" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -89,10 +90,10 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "ATLib/**/*.{h,m}"
-  # s.exclude_files = "ATLib/Exclude"
+  s.source_files  = "Classes", "Classes/**/*.{h,m}"
+  s.exclude_files = "Classes/Exclude"
 
-  s.public_header_files = "ATLib/ATLib.h"
+  # s.public_header_files = "Classes/**/*.h"
 
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -128,16 +129,9 @@ Pod::Spec.new do |s|
   #  where they will only apply to your library. If you depend on other Podspecs
   #  you can include multiple dependencies to ensure it works.
 
-  s.requires_arc = true
-  
-  s.dependency 'MJExtension'
-  s.dependency 'IQKeyboardManager'
-  s.dependency 'AFNetworking'
-  s.dependency 'Masonry'
-  s.dependency 'YTKKeyValueStore'
-  s.dependency 'SDWebImage'
-  
+  # s.requires_arc = true
+
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   # s.dependency "JSONKit", "~> 1.4"
-  
+
 end
