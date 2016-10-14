@@ -17,7 +17,7 @@ Pod::Spec.new do |s|
 
   s.name         = "iOSATAPPSDK"
   s.version      = "0.0.1"
-  s.summary      = "A short description of iOSATAPPSDK."
+  s.summary      = "iOSATAPPSDK是一款集成常用的第三方库的综合类框架"
 
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
@@ -25,7 +25,7 @@ Pod::Spec.new do |s|
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   s.description  = <<-DESC
-	A short description of iOSATAPPSDK
+	iOSATAPPSDK是针对一些常用的第三方库进行了二次加工处理
                    DESC
 
   s.homepage     = "https://github.com/cataler/iOSATAPPSDK"
